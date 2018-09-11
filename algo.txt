@@ -1,1 +1,26 @@
-soy gay
+por primera vez
+
+git init 
+
+git remote add origin url
+
+git add .
+
+git status
+
+git commit -m "nmbre"
+
+git push origin master
+
+
+Si ya existe
+
+git add .
+
+git status
+
+git commit -m "nmbre"
+
+git pull origin master
+
+git push origin master
