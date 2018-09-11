@@ -26,4 +26,680 @@ git pull origin master
 git push origin master
 
 
+////
+
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote add origin https://github.com/dfer10/Curso_FullStack.git
+fatal: remote origin already exists.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote
+origin
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote add origin https://github.com/dfer10/Curso_FullStack.git
+fatal: remote origin already exists.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote -v
+origin  https://gitlab.com/Dfer/Mi_primer_repositorio.git (fetch)
+origin  https://gitlab.com/Dfer/Mi_primer_repositorio.git (push)
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote rm ^C
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote rm https://gitlab.com/Dfer/Mi_primer_repositorio.git
+fatal: No such remote: https://gitlab.com/Dfer/Mi_primer_repositorio.git
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote set-url https://github.com/dfer10/Curso_FullStack.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote set-url --delete https://github.com/dfer10/Curso_FullStack.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote set-url --delete https://github.com/dfer10/Curso_FullStack.githttps                    ://github.com/dfer10/Curso_FullStack.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote set-url --delete https://github.com/dfer10/Curso_FullStack.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote rm origin
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote -v
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote add origin https://github.com/dfer10/Curso_FullStack.git
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote -v
+origin  https://github.com/dfer10/Curso_FullStack.git (fetch)
+origin  https://github.com/dfer10/Curso_FullStack.git (push)
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/ESTUDIANTE/Desktop/Daniel/.git                    /
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git add .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git commit -m "Inicio"
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git add .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   algo.txt
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git commit -m "Inicio"
+[master 74aff4d] Inicio
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git push origin master
+To https://github.com/dfer10/Curso_FullStack.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/dfer10/Curso_FullStack.gi                    t'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git push -u origin master
+To https://github.com/dfer10/Curso_FullStack.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/dfer10/Curso_FullStack.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/ESTUDIANTE/.ssh/id_rsa):
+Created directory '/c/Users/ESTUDIANTE/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/ESTUDIANTE/.ssh/id_rsa.
+Your public key has been saved in /c/Users/ESTUDIANTE/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:0Qf4E2TLi9+JiF9k4qe2DsG5PmE3rZM0H/rT7tb6jU8 your_email@example.com
+The key's randomart image is:
++---[RSA 4096]----+
+|         o+      |
+|        .+.o     |
+|        ..+..    |
+|     . . ooo     |
+|      + S.+.     |
+|      o==*oo .   |
+|     .++oB=oo.  E|
+|     ..o*+o o .+ |
+|      .+=+.=+oo.o|
++----[SHA256]-----+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git add .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   algo.txt
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git commit -m "Inicio"
+[master 4249673] Inicio
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git push origin master
+To https://github.com/dfer10/Curso_FullStack.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/dfer10/Curso_FullStack.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote -v
+origin  https://github.com/dfer10/Curso_FullStack.git (fetch)
+origin  https://github.com/dfer10/Curso_FullStack.git (push)
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote rm origin
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote -v
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote add origin https://github.com/dfer10/Curso_FullStack.git
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git push origin master
+To https://github.com/dfer10/Curso_FullStack.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/dfer10/Curso_FullStack.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git add .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git commit -m "Inicio"
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote -v
+origin  https://github.com/dfer10/Curso_FullStack.git (fetch)
+origin  https://github.com/dfer10/Curso_FullStack.git (push)
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git push origin master
+To https://github.com/dfer10/Curso_FullStack.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/dfer10/Curso_FullStack.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ ^C
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git branch
+* master
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git fetch
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/dfer10/Curso_FullStack
+ * [new branch]      master     -> origin/master
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote
+origin
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git branch -u origin master
+error: the requested upstream branch 'origin' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git pull origin master
+From https://github.com/dfer10/Curso_FullStack
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git log
+commit 424967301ac98a4d2e0a1e392ee72589ff739f6f (HEAD -> master)
+Author: Daniel Idarraga <didarragah@ucentral.edu.co>
+Date:   Mon Sep 10 20:00:43 2018 -0500
+
+    Inicio
+
+commit 74aff4d9ff8fce409e32c4d7d852a74b7e9237a2
+Author: Daniel Idarraga <didarragah@ucentral.edu.co>
+Date:   Mon Sep 10 19:53:02 2018 -0500
+
+    Inicio
+
+commit bb1b83849dc0b1c92ac38497dd7e5f6da7fa5442
+Author: Daniel Idarraga <didarragah@ucentral.edu.co>
+Date:   Mon Sep 10 19:28:26 2018 -0500
+
+    Ignorar
+
+commit c48b9dc037bb794124d9123f60b445529a150aad
+Author: Daniel Idarraga <didarragah@ucentral.edu.co>
+Date:   Mon Sep 10 19:27:04 2018 -0500
+
+    Ignorar
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git merge
+fatal: No remote for the current branch.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git pull origin master
+From https://github.com/dfer10/Curso_FullStack
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git co -b test
+git: 'co' is not a git command. See 'git --help'.
+
+The most similar commands are
+        commit
+        clone
+        log
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git checkout -b test
+Switched to a new branch 'test'
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (test)
+$ git status
+On branch test
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (test)
+$ girt
+bash: girt: command not found
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (test)
+$ git checkout master
+Switched to branch 'master'
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git merge master origin/master
+fatal: refusing to merge unrelated histories
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote rm origin
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/ESTUDIANTE/Desktop/Daniel/.git/
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote add origin git@github.com:dfer10/Curso_FullStack.git
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git add .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git push -u origin master
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git push -u origin master
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/ESTUDIANTE/.ssh/id_rsa):
+/c/Users/ESTUDIANTE/.ssh/id_rsa already exists.
+Overwrite (y/n)?
+
+
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git commit -m "inicio"
+On branch master
+nothing to commit, working tree clean
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ ssh-keygen -t rsa -b 4096 -C "didarragah@ucentral.edu.co"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/ESTUDIANTE/.ssh/id_rsa):
+/c/Users/ESTUDIANTE/.ssh/id_rsa already exists.
+Overwrite (y/n)?
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ eval $(ssh-agent -s)
+Agent pid 4580
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/ESTUDIANTE/.ssh/id_rsa (/c/Users/ESTUDIANTE/.ssh/id_rsa)
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git remote add origin git@github.com:dfer10/Curso_FullStack.git
+fatal: remote origin already exists.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ git push -u origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (21/21), 1.80 KiB | 367.00 KiB/s, done.
+Total 21 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/dfer10/Curso_FullStack/pull/new/master
+remote:
+To github.com:dfer10/Curso_FullStack.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ c..
+bash: c..: command not found
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ cd..
+bash: cd..: command not found
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ cd..
+bash: cd..: command not found
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/Desktop/Daniel (master)
+$ cd
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~
+$ cd desktop
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop
+$ git clone git@github.com:dfer10/Curso_FullStack.git
+Cloning into 'Curso_FullStack'...
+remote: Counting objects: 21, done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 21 (delta 3), reused 21 (delta 3), pack-reused 0
+Receiving objects: 100% (21/21), done.
+Resolving deltas: 100% (3/3), done.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop
+$ git clone https://github.com/Juandkpa/distributed.git
+Cloning into 'distributed'...
+remote: Counting objects: 21, done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 21 (delta 6), reused 20 (delta 5), pack-reused 0
+Unpacking objects: 100% (21/21), done.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop
+$ cd distributed
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git checkout -b new-feat-Daniel
+Switched to a new branch 'new-feat-Daniel'
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (new-feat-Daniel)
+$ code .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (new-feat-Daniel)
+$ git add .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (new-feat-Daniel)
+$ git push -u origin new-feat-Daniel
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'new-feat-Daniel' on GitHub by visiting:
+remote:      https://github.com/Juandkpa/distributed/pull/new/new-feat-Daniel
+remote:
+To https://github.com/Juandkpa/distributed.git
+ * [new branch]      new-feat-Daniel -> new-feat-Daniel
+Branch 'new-feat-Daniel' set up to track remote branch 'new-feat-Daniel' from 'origin'.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (new-feat-Daniel)
+$ git checkout master
+Switched to branch 'master'
+A       images/spiderman.jpg
+M       index.html
+Your branch is up to date with 'origin/master'.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git merge new-feat-Daniel
+Already up to date.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git pull
+remote: Counting objects: 8, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 8 (delta 4), reused 7 (delta 3), pack-reused 0
+Unpacking objects: 100% (8/8), done.
+From https://github.com/Juandkpa/distributed
+   7ef68b1..30415bd  master          -> origin/master
+ * [new branch]      new-feat-sediel -> origin/new-feat-sediel
+error: Your local changes to the following files would be overwritten by merge:
+        index.html
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 7ef68b1..30415bd
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git merge new-feat-Daniel
+Already up to date.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git checkout new-feat-Daniel
+Switched to branch 'new-feat-Daniel'
+A       images/spiderman.jpg
+M       index.html
+Your branch is up to date with 'origin/new-feat-Daniel'.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (new-feat-Daniel)
+$ git add .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (new-feat-Daniel)
+$ git commit -m "Daniel"
+[new-feat-Daniel 41b91b3] Daniel
+ 2 files changed, 28 insertions(+), 3 deletions(-)
+ create mode 100644 images/spiderman.jpg
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (new-feat-Daniel)
+$ git push -u origin new-feat-Daniel
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 116.56 KiB | 16.65 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Juandkpa/distributed.git
+   7ef68b1..41b91b3  new-feat-Daniel -> new-feat-Daniel
+Branch 'new-feat-Daniel' set up to track remote branch 'new-feat-Daniel' from 'origin'.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (new-feat-Daniel)
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git pull
+Updating 7ef68b1..30415bd
+Fast-forward
+ images/pool.jpg | Bin 0 -> 7574 bytes
+ index.html      |  27 +++++++++++++++++++++++++--
+ 2 files changed, 25 insertions(+), 2 deletions(-)
+ create mode 100644 images/pool.jpg
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git merge new-feat-Daniel
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master|MERGING)
+$ code .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master|MERGING)
+$ git add .
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master|MERGING)
+$ git commit -m "fix merge"
+[master 1616713] fix merge
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git pull
+remote: Counting objects: 16, done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 16 (delta 5), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (16/16), done.
+From https://github.com/Juandkpa/distributed
+ * [new branch]      new-feat-DianaRojas -> origin/new-feat-DianaRojas
+ * [new branch]      new-feat-JuanLopez  -> origin/new-feat-JuanLopez
+ * [new branch]      new-feat-SergioA    -> origin/new-feat-SergioA
+Already up to date.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 609 bytes | 609.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Juandkpa/distributed.git
+   30415bd..1616713  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$ git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 2), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/Juandkpa/distributed
+ * [new branch]      new_feat_carlosruiz -> origin/new_feat_carlosruiz
+Already up to date.
+
+ESTUDIANTE@SAP15-2018 MINGW64 ~/desktop/distributed (master)
+$
 
